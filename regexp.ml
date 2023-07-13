@@ -25,7 +25,7 @@ let fresh =
 
     
 (*******************************)
-(* Part 3: Regular Expressions *)
+(* Regular Expressions *)
 (*******************************)
 
 let rec regexp_to_nfa (regexp: regexp_t) : (int, char) nfa_t =
@@ -80,10 +80,6 @@ let rec regexp_to_nfa (regexp: regexp_t) : (int, char) nfa_t =
       
 ;;
     
-
-(*****************************************************************)
-(* Below this point is parser code that YOU DO NOT NEED TO TOUCH *)
-(*****************************************************************)
 
 exception IllegalExpression of string
 
