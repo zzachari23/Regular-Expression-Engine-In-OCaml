@@ -1,9 +1,9 @@
 open List
 open Sets
 
-(*********)
+
 (* Types *)
-(*********)
+
 
 type ('q, 's) transition = 'q * 's option * 'q
 
@@ -15,9 +15,8 @@ type ('q, 's) nfa_t = {
   delta: ('q, 's) transition list;
 }
 
-(***********)
+
 (* Utility *)
-(***********)
 
 (* explode converts a string to a character list *)
 let explode (s: string) : char list =
